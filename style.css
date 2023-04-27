@@ -120,15 +120,15 @@ form {
   border-radius: 60rem;
 }
 .letter {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
 
   justify-content: center;
 
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   margin-right: 3rem;
 
-  font-size: 1rem;
+  font-size: 0.8rem;
 
   background-color: var(--color);
 }
