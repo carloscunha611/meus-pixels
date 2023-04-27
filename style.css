@@ -22,8 +22,6 @@ ul {
   list-style: none;
 }
 body {
-  display: grid;
-  justify-content: center;
   background: #1d1d1d;
   color: #ccc;
 }
@@ -180,7 +178,13 @@ form {
 header nav,
 header form,
 .list-wrapper {
-  max-width: 22rem;
+  max-width: 32rem;
   width: 100%;
   margin-inline: auto;
+}
+
+@media (max-width: 428px) {
+  .container {
+    padding: 1.5rem;
+  }
 }
