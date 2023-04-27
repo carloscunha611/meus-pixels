@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+input {
+  font-family: 'Press Start 2P', cursive;
+}
+ul {
+  list-style: none;
+}
+body {
+  display: grid;
+  justify-content: center;
+  background: #1d1d1d;
+  color: #ccc;
+}
+header {
+  background: #141414;
+}
+
+.flex {
+  display: flex;
+}
+.container {
+  padding: 2.5rem;
+}
+.items-center {
+  align-items: center;
+}
+
+header h2 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+nav {
+  justify-content: space-between;
+}
+
+nav ul {
+  gap: 1rem;
+}
+
+nav ul li {
+  font-size: 1.5rem;
+}
+
+form {
+  margin-top: 1.5rem;
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.input-wrapper {
+  gap: 0.5rem;
+  background: #1d1d1d;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.input-wrapper input {
+  background: transparent;
+  border: 0;
+  width: 100%;
+  outline: 0;
+
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+  color: #ccc;
+  letter-spacing: 0.1rem;
+}
+
+.input-wrapper ion-icon {
+  font-size: 1rem;
+}
+
+.input-wrapper input::placeholder {
+  color: #ccc;
+}
+
+.input-wrapper:focus-within {
+  outline: 2px #ccc dotted;
+}
+
+.pixels {
+  flex-direction: column;
+  gap: 3.5rem;
+
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.pixels::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.pixels::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 60rem;
+}
+.letter {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  justify-content: center;
+
+  border-radius: 0.5rem;
+  margin-right: 3rem;
+
+  font-size: 1rem;
+
+  background-color: var(--color);
+}
+
+.purple {
+  --color: #633bbc;
+}
+.green {
+  --color: #07847e;
+}
+.yellow {
+  --color: #b49300;
+}
+.blue {
+  --color: #0088b3;
+}
+.pink {
+  --color: #9a00b3;
+}
+
+.art {
+  gap: 1rem;
+}
+.art img {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+
+.art h3 {
+  font-size: 0.8rem;
+  line-height: 1.1rem;
+  letter-spacing: 0.1rem;
+}
+
+.art p {
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+  color: #818181;
+
+  margin-top: 0.5rem;
+}
+
+.list-wrapper ul {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header nav,
+header form,
+.list-wrapper {
+  max-width: 22rem;
+  width: 100%;
+  margin-inline: auto;
+}
